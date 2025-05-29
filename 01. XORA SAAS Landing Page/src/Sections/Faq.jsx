@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 import { faq } from "../constants";
-import FaqItem from "../components/FaqItem.jsx";
+import FaqItem from "../Components/FaqItem";
 
 const Faq = () => {
   const halfLength = Math.floor(faq.length / 2);
@@ -9,11 +9,11 @@ const Faq = () => {
     <section>
       <Element name="faq" className="relative">
         <div className="container relative z-2 py-28">
-          <div>
+          <div >
             <h3 className="h3 max-md:h5 max-w-640 max-lg:max-w-md mb-7 text-p4">
               Curiosity didn't kill the cat, it gave it answers.
             </h3>
-            <p className="body-1 max-lg:max-w-sm">
+            <p className="body-1 max-lg:max-w-sm ">
               You've got questions, we've got answers.
             </p>
           </div>

@@ -11,7 +11,7 @@ const Button = ({
 }) => {
   const Inner = () => (
     <>
-      <span className="relative flex items-center min-h-[60px] px-4 g4 rounded-2xl cursor-pointer inner-before custom-class overflow-hidden  ">
+      <span className="relative flex items-center min-h-[60px] px-4 g4 rounded-2xl cursor-pointer inner-before hover-btn-small overflow-hidden  ">
         <span className="absolute -left-[1px]">
           <Marker markerFill={markerFill} />
         </span>

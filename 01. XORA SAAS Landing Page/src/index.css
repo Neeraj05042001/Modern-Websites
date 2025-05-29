@@ -544,7 +544,7 @@ input {
 
 /* FAQ */
 .faq-line_after {
-  position: relative;
+  position: absolute;
 }
 
 .faq-line_after::after {
@@ -684,7 +684,7 @@ input {
 }
 
 .testimonials_group-after {
-  position: relative;
+  /* position: ; */
 }
 
 .testimonials_group-after::after {
@@ -900,3 +900,16 @@ box-shadow:
     0px -14px 48px rgba(40, 51, 111, 0.7);
 
 }
+
+.plus-icon-hover:hover{
+  border-color:  #1959AD;
+}
+.minus-icon-before{
+  background-color: #2EF2FF;
+
+}
+/* .minus-icon::after{
+  background-color: #2EF2FF;
+  rotate: 0deg;
+
+} */
