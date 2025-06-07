@@ -15,3 +15,35 @@ bg-[radial-gradient(50%_50%_at_16.8%_18.3%,white,rgb(184,148,255)_37.7%,rgb(24,0
 ```js
 npm install @dotlottie/player-component @dotlottie/react-player
 ```
+
+## Ticker Animation:
+
+```js
+<motion.div
+  initial={{ translateX: "-50%" }}
+  animate={{ translateX: "0" }}
+  transition={{
+    repeat: Infinity,
+    duration: 30,
+    ease: "linear",
+  }}
+  className="flex flex-none gap-14 pr-14 -translate-x-1/2"
+>
+  {[
+    acmeLogo,
+    apexLogo,
+    celestialLogo,
+    quantumLogo,
+    pulseLogo,
+    echoLogo,
+    acmeLogo,
+    apexLogo,
+    celestialLogo,
+    quantumLogo,
+    pulseLogo,
+    echoLogo,
+  ].map((logo, index) => (
+    <img src={logo} key={index} className="h-12 w-auto"></img>
+  ))}
+</motion.div>
+```

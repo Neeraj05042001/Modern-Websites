@@ -1,6 +1,7 @@
 import LogoIcon from "../assets/logo.svg?react";
 import MenuIcon from "../assets/icon-menu.svg?react";
 import Button from "../Components/Button";
+import { motion } from "motion/react"
 
 const Header = () => {
   return (

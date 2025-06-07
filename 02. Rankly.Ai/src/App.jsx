@@ -1,5 +1,6 @@
 import CallToAction from "./Sections/CallToAction";
 import Features from "./Sections/Features";
+import Footer from "./Sections/Footer";
 import Header from "./Sections/Header";
 import Hero from "./Sections/Hero";
 import LogoTicker from "./Sections/LogoTicker";
@@ -14,6 +15,7 @@ const App = () => {
       <Features/>
       <Testimonial/>
       <CallToAction/>
+      <Footer/>
     </>
   );
 };
