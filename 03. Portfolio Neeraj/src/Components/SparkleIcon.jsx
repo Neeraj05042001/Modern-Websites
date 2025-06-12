@@ -1,28 +1,49 @@
 import SParkleImage from "../assets/icons/sparkle.svg?react";
-const SParkleIcon = ({size, rotation, sparkleSize}) => {
+import { twMerge } from "tailwind-merge";
+const SParkleIcon = ({
+  size,
+  rotation,
+  shouldOrbit = false,
+  sparkleSize,
+  orbitDuration,
+  shouldSpin = false,
+  spinDuration,
+}) => {
   return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20 ">
       <div
-        className=" -500 rotate-45 "
-        style={{
-          transform: `rotate(${rotation}deg)`,
-          height: `${size}px`,
-          width: `${size}px`,
-        }}
+        className={twMerge(shouldOrbit === true && "animate-spin ")}
+        style={{ animationDuration: orbitDuration }}
       >
         <div
-          className=" inline-flex "
+          className=" flex items-start justify-start "
           style={{
-            transform: `rotate(${rotation * -1}deg)`,
+            transform: `rotate(${rotation}deg)`,
+            height: `${size}px`,
+            width: `${size}px`,
           }}
         >
-          <SParkleImage
-            className=" text-emerald-300/20"
+          <div
+            className={twMerge(shouldSpin === true && "animate-spin")}
             style={{
-              height: `${sparkleSize}px`,
-              width: `${sparkleSize}px`,
+              animationDuration: spinDuration,
             }}
-          />
+          >
+            <div
+              className=" inline-flex "
+              style={{
+                transform: `rotate(${rotation * -1}deg)`,
+              }}
+            >
+              <SParkleImage
+                className=" text-emerald-300/20"
+                style={{
+                  height: `${sparkleSize}px`,
+                  width: `${sparkleSize}px`,
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

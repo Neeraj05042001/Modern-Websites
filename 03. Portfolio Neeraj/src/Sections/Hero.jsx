@@ -18,14 +18,66 @@ const Hero = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
 
-        <HeroOrbit size={800} rotation={-72} starSize={112} />
-        <HeroOrbit size={550} rotation={20} starSize={48} />
-        <HeroOrbit size={590} rotation={98} starSize={32} />
+        <SParkleIcon
+          size={430}
+          rotation={-14}
+          sparkleSize={32}
+          shouldOrbit
+          orbitDuration="30s"
+          shouldSpin
+          spinDuration="3s"
+        />
+        <SParkleIcon
+          size={440}
+          rotation={79}
+          sparkleSize={20}
+          shouldOrbit
+          orbitDuration="32s"
+          shouldSpin
+          spinDuration="3s"
+        />
+        <SParkleIcon
+          size={530}
+          rotation={178}
+          sparkleSize={40}
+          shouldOrbit
+          orbitDuration="36s"
+          shouldSpin
+          spinDuration="3s"
+        />
+        <HeroOrbit
+          size={550}
+          rotation={20}
+          starSize={48}
+          shouldOrbit
+          orbitDuration="38s"
+          shouldSpin
+          spinDuration="6s"
+        />
+        <HeroOrbit
+          size={590}
+          rotation={98}
+          starSize={32}
+          shouldOrbit
+          orbitDuration="40s"
+          shouldSpin
+          spinDuration="6s"
+        />
+        <SParkleIcon size={710} rotation={144} sparkleSize={56} shouldOrbit
+          orbitDuration="44s"
+          shouldSpin
+          spinDuration="6s"/>
+        <HeroOrbit
+          size={800}
+          rotation={-72}
+          starSize={112}
+          shouldOrbit
+          orbitDuration="48s"
+          shouldSpin
+          spinDuration="6s"
+        />
+
         {/* <HeroOrbit size={800} rotation={-72} starSize={112}/> */}
-        <SParkleIcon size={430} rotation={-14} sparkleSize={32} />
-        <SParkleIcon size={440} rotation={79} sparkleSize={20} />
-        <SParkleIcon size={530} rotation={178} sparkleSize={40} />
-        <SParkleIcon size={710} rotation={144} sparkleSize={56} />
       </div>
 
       <div className="container">
@@ -36,7 +88,9 @@ const Hero = () => {
             alt="person peeking from behind computer"
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-400 size-2.5 rounded-full"></div>
+            <div className="bg-green-400 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
+            </div>
             <div className="text-sm font-medium ">
               Available for new projects
             </div>
