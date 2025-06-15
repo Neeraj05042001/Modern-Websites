@@ -1,6 +1,6 @@
 import ArrowDown from "../assets/icons/arrow-down.svg?react";
 import grainImage from "../assets/images/grain.jpg";
-import HeroOrbit from "../Components/HeroORBIT.JSX";
+import HeroOrbit from "../Components/HeroOrbit.jsx"
 import SParkleIcon from "../Components/SparkleIcon";
 import ReactTypingEffect from "react-typing-effect";
 import { Typewriter } from "react-simple-typewriter";
