@@ -3,11 +3,11 @@ import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg?react";
 const footerLinks = [
   {
     title: "Twitter",
-    link: "#",
+    link: "https://x.com/_19_neeraj",
   },
   {
     title: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/neeraj-kumar1904/",
   },
   {
     title: "Instagram",
