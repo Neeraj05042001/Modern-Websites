@@ -1,6 +1,7 @@
 import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
+import portfolioImage from "../assets/images/portfolio-image.png";
 
 import CheckIcon from "../assets/icons/check-circle.svg?react";
 import ArrowUp from "../assets/icons/arrow-up-right.svg?react";
@@ -20,6 +21,18 @@ const portfolioProjects = [
     ],
     link: "https://ranklyai.vercel.app/",
     image: aiStartupLandingPage,
+  },
+  {
+    company: "Neeraj Porfolio",
+    year: "2025",
+    title: "Porfolio Website",
+    results: [
+      { title: "Crafted pixel-perfect UI" },
+      { title: "Responsive across all devices" },
+      { title: "Smooth animations & transitions" },
+    ],
+    link: "https://neeraj-kumar-portfolio-xi.vercel.app/",
+    image: portfolioImage,
   },
 
   {
@@ -99,7 +112,7 @@ const Projects = () => {
                 </div>
                 <div className="relative">
                   <img
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none "
                     src={project.image}
                     alt={project.title}
                   />

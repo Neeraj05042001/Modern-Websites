@@ -6,6 +6,7 @@ import ReactTypingEffect from "react-typing-effect";
 import { Typewriter } from "react-simple-typewriter";
 import myPic from "../assets/images/my-pic.png";
 
+
 const Hero = () => {
    const scrollToSection = (id) => {
     const section = document.getElementById(id);
